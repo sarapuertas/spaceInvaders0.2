@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Space Invaders</title>
+</head>
+
+<body>
+    <section class="flex" id="game-data">
+
+        <p id="score"><span>0</span> Points</p>
+        <p id="lives"><span>10</span> Lives</p>
+        <p id="level"><span>1</span> Level</p>
+    </section>
+    <canvas id="canvas"></canvas>
+    <div id="gameover" class="myPopup">
+        <div>
+            <div class="flex column-center">
+                <h2>GAME OVER, SORRY</h2>
+                <p id="final-level"></p>
+                <p id="final-score"></p>
+
+                <a href="#close" title=" Close">
+                    <img src="./assets/img/exit.png" alt="">
+                </a>
+                <a href="#" id="play-again" title="play again">
+                    <img src="./assets/img/play-again.png" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="start" class="myPopup opacity">
+        <div>
+            <h2>LETS PLAY</h2>
+            <div class="flex column-center">
+                <section>
+                    <article>
+                        <p>Use left and rigth arrow keys to move</p>
+                        <img src="./assets/img/leftArrow.png" alt="leftArrow">
+                        <img src="./assets/img/rightArrow.png" alt="rightArrow">
+                    </article>
+                    <article>
+                        <p>Use space key to shoot your enemies</p>
+                    </article>
+                    <img src="./assets/img/spaceButton.png" alt="">
+                </section>
+                <section>
+                    <a href="#" id="play" title=" Close" class="">
+                        <img src="./assets/img/startButton.png" alt="start play">
+                    </a>
+                </section>
+            </div>
+        </div>
+    </div>
+    <div id="winner" class="myPopup">
+        <div class="flex column-center">
+
+            <h2>CONGRATULATION YOU ARE A FUCKING MACHINE</h2>
+            <img src="https://sayingimages.com/wp-content/uploads/cheerful-kid-winner-meme.jpg" alt="winner" srcset="">
+        </div>
+    </div>
+    <script src="./js/background.js"></script>
+    <script src="./js/bullets.js"></script>
+    <script src="./js/grid.js"></script>
+    <script src="./js/enemy.js"></script>
+    <script src="./js/player.js"></script>
+    <script src="./js/obstacles.js"></script>
+    <script src="./js/sound.js"></script>
+    <script src="./js/game.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
